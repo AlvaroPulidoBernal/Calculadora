@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Calculadora</string>
+    <string name="Button_Addition">+</string>
+    <string name="Button_subtraction">-</string>
+    <string name="Button_division">/</string>
+    <string name="Button_multiplication">X</string>
+    <string name="Tex_number1">First Number</string>
+    <string name="Tex_number2">Second Number</string>
+    <string name="Result">Result</string>
+</resources>
