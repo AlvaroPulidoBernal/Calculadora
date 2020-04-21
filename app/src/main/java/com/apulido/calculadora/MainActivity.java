@@ -16,6 +16,16 @@ public class MainActivity extends AppCompatActivity {
     private EditText edit_text_value_2;
     private TextView text_view_result;
 
+
+    String[] array = {"8C", "D9", "26", "1D", "69", "B7", "96", "DB"};
+    StringBuilder output = new StringBuilder();
+
+
+
+
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,6 +35,25 @@ public class MainActivity extends AppCompatActivity {
         edit_text_value_1 = (EditText)findViewById(R.id.txt_num1);
         edit_text_value_2 = (EditText)findViewById(R.id.txt_num2);
         text_view_result = (TextView)findViewById(R.id.Result);
+
+        byte[] BEACommand = new byte[4];
+        BEACommand[0] = 0x7E;
+        BEACommand[1] = 0x05;
+        BEACommand[0] = 0xFF;
+        BEACommand[1] = 0x05;
+
+
+        String[] array = {"8C", "D9", "26", "1D", "69", "B7", "96", "DB"};
+
+        StringBuilder output = new StringBuilder();
+        for ( String hex : array ) {
+            output.append( (char)Integer.parseInt( hex, 16 ) );
+        }
+
+        byte[] bytes = new byte[array.length];
+        for ( int i = 0; i < array.length; i++ ) {
+            bytes[i] = (byte)Integer.parseInt( array[i], 16 );
+        }
 
     }
 
