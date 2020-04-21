@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
         text_view_result = (TextView)findViewById(R.id.Result);
 
         byte[] BEACommand = new byte[4];
-        BEACommand[0] = 0x7E;
+        BEACommand[0] = 0xFF;
         BEACommand[1] = 0x05;
         BEACommand[0] = 0xFF;
         BEACommand[1] = 0x05;
