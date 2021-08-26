@@ -39,8 +39,8 @@ public class MainActivity extends AppCompatActivity {
         byte[] BEACommand = new byte[4];
         BEACommand[0] = (byte)0xFF;
         BEACommand[1] = (byte)0x05;
-        BEACommand[0] = 0xFF;
-        BEACommand[1] = 0x05;
+        BEACommand[0] = (byte)0xFF;
+        BEACommand[1] = (byte)0x05;
 
 
         String[] array = {"8C", "D9", "26", "1D", "69", "B7", "96", "DB"};
