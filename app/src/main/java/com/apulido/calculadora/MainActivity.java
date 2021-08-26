@@ -43,6 +43,9 @@ public class MainActivity extends AppCompatActivity {
         BEACommand[1] = (byte)0x05;
 
 
+        //Add a comment
+
+
         String[] array = {"8C", "D9", "26", "1D", "69", "B7", "96", "DB"};
 
         StringBuilder output = new StringBuilder();
